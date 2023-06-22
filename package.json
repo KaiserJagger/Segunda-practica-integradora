@@ -1,0 +1,42 @@
+{
+  "name": "login-por-formulario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "type": "module",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmsocorro/Login-por-formulario.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Andreolli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmsocorro/Login-por-formulario.git"
+  },
+  "homepage": "https://github.com/jmsocorro/Login-por-formulario.git#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-mongo": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.1.4",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0",
+    "mongoose-paginate-v2": "^1.7.1",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.1.12",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  }
+}
