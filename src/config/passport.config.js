@@ -149,9 +149,9 @@ const initializePassport = () => {
 
     passport.use('jwt', new JWTStrategy({
         jwtFromRequest: ExtractJwt.fromExtractors([extractCookie]), //donde leer el token
-        secretOrKey: process.env.JWT_PRIVATE_KEY
+        secretOrKey: process.env.JWT_SECRET,
     }, async(jwt_payload, done) => {
-        done(null, jwt_payload)
+        done(null, jwt_payload.user)
     }) )
 
     passport.serializeUser((user, done) => {

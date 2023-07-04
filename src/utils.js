@@ -21,7 +21,7 @@ export default __dirname;
 
 // GENERA TOKEN
 export const generateToken = (user) => {
-    const token = jwt.sign({ user }, process.env.JWT_PRIVATE_KEY, {expiresIn: '24h'} )
+    const token = jwt.sign({ user }, process.env.JWT_SECRET, {expiresIn: '24h'} )
     return token;
 }
 
